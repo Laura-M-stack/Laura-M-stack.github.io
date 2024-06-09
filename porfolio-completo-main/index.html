@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+   
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="shortcut icon" href="img/LMicon.png">
+    <title data-section="title" data-value="title">LM Desarrolladora Web & Tester QA</title>
+</head>
+
+<body>
+    <!-- I N I C I O -->
+    <section id="home" data-section="home">
+        <div class="content">
+            <header>
+                <div class="content-header">
+                    <img class="img" src="img/LM.png" alt="logo LM">
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#home"data-section="home" data-value="home" onclick="select(this)">Inicio</a></li>
+                            <li><a href="#aboutme" data-section="home" data-value="about-me" onclick="select(this)">Sobre mí</a></li>
+                            <li><a href="#services" data-section="home" data-value="services" onclick="select(this)">Servicios</a></li>
+                            <li><a href="#portfolio" data-section="home" data-value="projects" onclick="select(this)">Proyectos</a></li>
+                            <li><a href="#contact" data-section="home" data-value="contact" onclick="select(this)">Contacto</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- icon responsive menu-->
+                    <div id="icon-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div id="flags" class="flags">
+                        <div class="flags-item" data-language="es">
+                            <img src="/img/es.svg" alt="AR flag">
+                        </div>
+                    </div>
+
+                    <div id="flags" class="flags">
+                        <div class="flags-item" data-language="en">
+                            <img src="/img/us.svg" alt="US flag">
+                        </div>
+                    </div>
+
+                    <div class="networks">
+                        <a href="https://www.linkedin.com/in/laura-moyano-h/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="introduction">
+                <p class="welcome" data-section="home" data-value="welcome">Bienvenidos</p>
+                <h1 data-section="home" data-value="i-am">Soy <span class="span">Laura Moyano</span> <span class="span1"></span></h1><br>
+                <h2 data-section="home" data-value="rol">Desarrolladora Web & Tester QA</h2>
+                
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- S O B R E M I -->
+    <section id="aboutme" data-section="about-me">
+        <div class="container-photo">
+            <img src="img/photo.png" alt="photo">
+        </div>
+        <div class="aboutme">
+            <h3 class="header-section" data-section="about-me" data-value="about-me">SOBRE MÍ</h3>
+          
+            <p class="sr-aboutme"  data-section="about-me" data-value="description">Como Desarrolladora Web y Tester QA, mi pasión por la tecnología 
+                y el perfeccionamiento de productos digitales me impulsa a buscar constantemente soluciones 
+                innovadoras. Con una sólida formación en desarrollo web y conocimientos en pruebas de calidad, 
+                soy capaz de colaborar de manera efectiva en equipos multidisciplinarios para lograr resultados 
+                excepcionales. Mi enfoque meticuloso y mi habilidad para resolver problemas me permiten garantizar 
+                la calidad y funcionalidad de los proyectos en los que participo. Estoy comprometida con el aprendizaje 
+                continuo y emocionada por enfrentar nuevos desafíos en el campo de la tecnología.</p>
+            <button class="button-cv"  data-section="about-me" data-value="download"><a href="Laura Moyano Testing cv.pdf">Descargar CV</a></button>
+        </div>
+    </section>
+
+    <!-- S E R V I C I O S -->
+    <section id="services" data-section="services">
+        <h3 class="header-section" data-section="services" data-value="my-services">MIS SERVICIOS</h3>
+        <div class="sr-services">
+        <div class="row">
+            <div class="service">
+                <span class="icon"> <i class="fa-solid fa-code"></i></span>
+                <h4 data-section="services" data-value="design">Diseño y Desarrollo de Sitios Web</h4>
+            </div>
+
+            <div class="service">
+                <span class="icon"><i class="fa-brands fa-python"></i></span>
+                <h4 data-section="services" data-value="programming">Programación Python</h4>
+            </div>
+
+            <div class="service">
+                <span class="icon"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4 data-section="services" data-value="seo">Posicionamiento SEO</h4>
+            </div>
+
+            <div class="service">
+                <span class="icon"><i class=><i class="fa-solid fa-magnifying-glass"></i></i></span>
+                <h4 data-section="services" data-value="testing">Testing de Software</h4>
+            </div>
+            
+           
+        </div>
+        </div>
+    </section>
+
+    <!-- H A B I L I D A D E S -->
+    <div class="container-skills" id="skills" data-section="skills">
+        <h3 class="header-section" data-section="skills" data-value="skills">HABILIDADES </h3>
+    
+       <ul class="list" data-section="skills" data-value="languages">Lenguajes:
+        <li class="item" >Html5</li>
+        <li class="item">Css3</li>
+        <li class="item">Tailwind</li>
+        <li class="item">JavaScript</li>
+        <li class="item">Python</li>
+        <li class="item">Django</li>
+    
+       </ul>
+      
+       <ul class="list" data-section="skills" data-value="tools">Herramientas:
+        <li class="item">TestLink</li>
+        <li class="item" >MantisBT</li>
+        <li class="item" >Chrome DevTools</li>
+        <li class="item">Trello</li>
+        <li class="item">Docker</li>
+        <li class="item">Kubernetes</li>
+        <li class="item">Figma</li>
+       </ul>
+      
+       <ul class="list" data-section="skills" data-value="soft-skills">Habilidades blandas:
+        <li class="item" data-section="skills" data-value="creativity">Creatividad</li>
+        <li class="item" data-section="skills" data-value="adaptability">Adaptabilidad</li>
+        <li class="item" data-section="skills" data-value="team-work">Trabajo en equipo</li>
+        <li class="item" data-section="skills" data-value="self-learning">Autoaprendizaje</li>
+        <li class="item" data-section="skills" data-value="communication">Comunicación</li>
+        <li class="item" data-section="skills" data-value="critical-thinking">Pensamiento crítico</li>
+        <li class="item" data-section="skills" data-value="problems-solving">Resolución de problemas</li>
+       
+       </ul>
+       
+    </div>
+           
+       <!-- </div class="skill">
+            <img class="img" src="img/logos-html-css-js.png" alt="html,css & js">
+        </div>
+        <div class="skill">
+            <img src="img/logo-tailwind.png" alt="tailwind">
+        </div>
+        <div class="skill">
+           <img class="img" src="img/logo-react.png" alt="react">
+        </div>
+        <div class="skill">
+           <img class="img" src="img/logo-python.png" alt="python">
+        </div>
+        <div class="skill">
+           <img src="img/logo-django.png" alt="django">
+        </div>
+        <div class="skill">
+            <img src="img/logo-mysql.png" alt="mysql">
+        </div>
+        <div class="skill">
+            <img src="img/logo-postgres.png" alt="postgres">
+        </div>
+        <div class="skill">
+            <img src="img/logo-trello.png" alt="trello">
+        </div>
+        <div class="skill">
+            <img src="img/logo-testlink.png" alt="testlink">
+        </div>
+        <div class="skill">
+            <img src="img/mantisbt.png" alt="mantisbt">
+        </div>
+        <div class="skill">
+            <img src="img/logo-chrome-devtools.png" alt="chrome_devtools">
+        </div>
+    </div>-->
+
+    <!-- P R O Y E C T O S -->
+    <!--<section id="portfolio" class = "sr-portfolio">
+        <h3 class="header-section">Mis proyectos</h3>
+        <div class="row">
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project1.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion project</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project2.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion project</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project3.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion project</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project4.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion project</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project5.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion project</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project6.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion project</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project7.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion project</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project8.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion project</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project9.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion project</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- C O N T A C T O -->
+    <section id="contact" data-section="contact">
+        <h3 class="header-section" data-section="contact" data-value="contact-me">Contáctame</h3>
+        
+        <div class="container-form">
+            <form action="lauraymh000@gmail.com">
+                <div class="sr-contact">
+                <div class="half row ">
+                    <input type="text"  id= "name" data-section="contact" data-value="full-name" placeholder="Nombre Completo" autocomplete="off" class="input-half">
+                    <input type="email" id= "email" placeholder="Email" autocomplete="off" class="input-half">
+                </div>
+                <div class="row">
+                    <input type="text" id="subject" data-section="contact" data-value="subject" placeholder="Asunto" autocomplete="off" class="input-full">
+                </div>
+                <div class="row">
+                    <textarea name="" id="message" data-section="contact" data-value="message" cols="10" rows="5" placeholder="Escribe tu mensaje" autocomplete= "off" class="input-full"></textarea>
+                </div>
+
+                <button type="submit" class="button-submit" data-section="contact" data-value="submit-message">Enviar mensaje</button>
+                <script defer src="Javascript/script.js"></script>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- F O O T E R -->
+    <footer data-section="footer">
+        <p data-section="footer" data-value="copyright">Copyright © - Todos los derechos reservados - 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
