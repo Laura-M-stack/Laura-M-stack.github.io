@@ -166,15 +166,19 @@ sr.reveal(".sr-contact", {
 //console.log(e.target);
 //});
 
-var changeLang = async (language) => {
-  const request = await fetch(`./languages/${language}.json`);
-  const response = await request.json();
+var changeLang = async (language) => { 
+  const request = await fetch(`./languages/${language}.json`); 
+  const response = await request.json(); 
+ 
+  console.log(response); 
+} 
+ 
+const flags = document.querySelectorAll('.flags-item'); 
+ 
+flags.forEach(flag => { 
+  flag.addEventListener('click', function() { 
+    const language = this.getAttribute('data-language'); 
+    changeLang(language); 
+  }); 
+}); 
 
-  console.log(response);
-}
-
-const select = document.getElementById("flags");
-addEventListener('change', function() { 
-  changeLang(this.value); 
-}   
-);
